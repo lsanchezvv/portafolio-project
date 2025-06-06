@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { GithubLogo, XLogo } from "../icons";
+import { GithubLogo } from "../icons";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
-import { FileTerminalIcon } from "lucide-react";
+
 const Navbar = () => {
   return (
     <nav className="fixed z-10 top-6 inset-x-4 h-14 bg-background border dark:border-slate-700/70 max-w-screen-md mx-auto rounded-full">

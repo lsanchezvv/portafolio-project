@@ -18,6 +18,13 @@ interface AnimatedGridPatternProps {
   repeatDelay?: number;
 }
 
+function generateSquares(count: number, getPos: () => [number, number]) {
+  return Array.from({ length: count }, (_, i) => ({
+    id: i,
+    pos: getPos(),
+  }));
+}
+
 export default function AnimatedGridPattern({
   width = 40,
   height = 40,
@@ -33,21 +40,13 @@ export default function AnimatedGridPattern({
   const id = useId();
   const containerRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const [squares, setSquares] = useState(() => generateSquares(numSquares));
+  const [squares, setSquares] = useState(() => generateSquares(numSquares, getPos));
 
-  function getPos() {
+  function getPos(): [number, number] {
     return [
       Math.floor((Math.random() * dimensions.width) / width),
       Math.floor((Math.random() * dimensions.height) / height),
     ];
-  }
-
-  // Adjust the generateSquares function to return objects with an id, x, and y
-  function generateSquares(count: number) {
-    return Array.from({ length: count }, (_, i) => ({
-      id: i,
-      pos: getPos(),
-    }));
   }
 
   // Function to update a single square's position
@@ -67,7 +66,7 @@ export default function AnimatedGridPattern({
   // Update squares to animate in
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
-      setSquares(generateSquares(numSquares));
+      setSquares(generateSquares(numSquares, getPos));
     }
   }, [dimensions, numSquares]);
 

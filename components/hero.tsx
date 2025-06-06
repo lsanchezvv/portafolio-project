@@ -25,7 +25,7 @@ const Hero = () => {
           Building Scalable and Resilient Backend Systems
         </h1>
         <p className="mt-6 text-[17px] md:text-lg">
-        Hey, I'm Luis — a Senior Software Engineer with solid experience building scalable and resilient backend systems. I've had the opportunity to start and lead projects from scratch, as well as enhance existing applications to meet new requirements from both user and business perspectives. On this website, I've decided to expand on my experience and skills and provide more insight into my current and past projects. Stick around to see what I've been up to!</p>
+        Hey, I&apos;m Luis — a Senior Software Engineer with solid experience building scalable and resilient backend systems. I&apos;ve had the opportunity to start and lead projects from scratch, as well as enhance existing applications to meet new requirements from both user and business perspectives. On this website, I&apos;ve decided to expand on my experience and skills and provide more insight into my current and past projects. Stick around to see what I&apos;ve been up to!</p>
         <div className="mt-12 flex items-center justify-center gap-4">
           <Button size="lg" className="rounded-full text-base">
             See What I Do <CircleArrowDown className="ml-2 !h-5.5 !w-5.5" />

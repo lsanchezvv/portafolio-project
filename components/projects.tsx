@@ -76,7 +76,7 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const projects = []
+  const projects: ProjectCardProps[] = [];
   //   {
   //     title: "E-Commerce Platform",
   //     description:
