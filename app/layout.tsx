@@ -8,9 +8,9 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "Luis Sanchez portfolio",
+  title: "Luis Sanchez - Backend Developer",
   description:
-    "Backend developer portfolio",
+    "Senior Backend Developer",
 };
 
 export default function RootLayout({

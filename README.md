@@ -1,6 +1,6 @@
-# Portfolio Project
+# Personal Website
 
-A modern and responsive portfolio built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
+A modern and responsive personal website built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
 
 ## Check website
 
