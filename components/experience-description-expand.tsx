@@ -12,7 +12,7 @@ const ExperienceDescriptionExpand = ({ description }: { description: string }) =
           'prose gap-4 prose-sm text-muted-foreground box transition-all duration-500 overflow-hidden',
           {
             'line-clamp-2 max-h-[4.5rem]': !isOpen,
-            'max-h-[1000px]': isOpen,
+            'max-h-none': isOpen,
           }
         )}
         dangerouslySetInnerHTML={{ __html: description }}
