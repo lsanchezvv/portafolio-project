@@ -252,9 +252,28 @@ const Experience = () => {
       company: "Vivial",
       companyLink: "https://www.linkedin.com/company/vivialmedia/",
       period: "Sep 2015 - May 2018",
-      description:
-        "Develop and provide support for web and desktop applications with a team of developers using technologies such as C#, Javascript, Web MVC, CSS, HTML, Microsoft SQL Server, Oracle & more.",
-      technologies: ["C#", "SQL", ".NET", "Oracle"],
+      description: "My first role as a software developer was mainly focused on maintaining and supporting internal tools for the Operations and HR departments. I worked on bug fixes, user-reported issues, and small improvements across several business-critical applications.",
+      more: `
+<p><strong>Key Responsibilities</strong></p>
+<ul class="pl-5 list-disc">
+  <li>Maintained legacy applications written in C# and .NET using object-oriented programming principles.</li>
+  <li>Worked with Microsoft SQL Server and Oracle databases, using Entity Framework as the ORM.</li>
+  <li>Supported and improved various internal tools, including:</li>
+  <ul class="pl-5 list-disc">
+    <li>HR web applications (e.g., vendor payment systems) built with .NET MVC.</li>
+    <li>Windows desktop applications used for parsing and processing thousands of directory records (e.g., Yellow & White Pages).</li>
+  </ul>
+</ul>
+<p><strong>Notable Contribution</strong></p>
+<ul class="pl-5 list-disc">
+  <li>Worked on the re-write of a legacy Windows application used for large file parsing:</li>
+  <ul class="pl-5 list-disc">
+    <li>Rebuilt the UI to improve responsiveness and usability.</li>
+    <li>Eliminated blocking behavior during record processing, significantly improving the user experience and workflow efficiency.</li>
+  </ul>
+</ul>
+`,
+        technologies: ["C#", "SQL", ".NET", "Oracle"],
     },
   ];
 
