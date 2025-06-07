@@ -55,7 +55,7 @@ const About = () => {
                   View Github
                 </Button>
               </a>
-              <a href="/resume.pdf" download>
+              <a href="/luis_sanchez_sr_backend.pdf" download>
                 <Button variant="outline" className="rounded-full">
                   <Download />
                   Download CV
