@@ -3,6 +3,22 @@ import { Geist } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { BotIdClient } from "botid/client";
+import { ReactNode } from 'react';
+
+type RootLayoutProps = {
+  children: ReactNode;
+};
+const protectedRoutes = [
+  {
+    path: "/api/chat",
+    method: "POST",
+  },
+  {
+    path: "/api/getEmbeddingForPortfolio",
+    method: "POST",
+  },
+];
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -14,7 +30,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.luisanz.com"),
   openGraph: {
     title: "Luis Sanchez - Senior Software Engineer",
-    description: "Senior Software Engineer, specialized in Backend. Extensive experience in Node.js, PostgresQL and event driven architecture.",
+    description:
+      "Senior Software Engineer, specialized in Backend. Extensive experience in Node.js, PostgresQL and event driven architecture.",
     url: "https://www.luisanz.com",
     images: [
       {
@@ -40,6 +57,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <BotIdClient protect={protectedRoutes} />
+      </head>
       <body className={`${geistSans.className} antialiased`}>
         <Navbar />
         <main>{children}</main>
