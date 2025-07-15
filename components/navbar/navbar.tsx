@@ -3,6 +3,7 @@ import { GithubLogo } from "../icons";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
+import AIChatButton from "../AIChatButton";
 
 const Navbar = () => {
   return (
@@ -26,6 +27,7 @@ const Navbar = () => {
               <GithubLogo className="h-5! w-5!" />
             </Button>
           </a>
+          <AIChatButton />
           {/* Mobile Menu */}
           <div className="md:hidden">
             <NavigationSheet />
