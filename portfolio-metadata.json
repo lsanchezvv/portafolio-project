@@ -1,0 +1,265 @@
+[
+  {
+    "category": "experience",
+    "company": "Volvo Cars",
+    "role": "Senior Software Engineer",
+    "startDate": "2023-07",
+    "endDate": null,
+    "cluster": "Car Service",
+    "tech_stack": ["Node.js", "Kafka", "Kubernetes"],
+    "content": "I work in a small, autonomous backend-focused team (6–8 members) within the Car Service Cluster at Volvo. We are responsible for service-related customer communications, including vehicle service reminders and service booking notifications (email, push, and in-app)."
+  },
+  {
+    "category": "experience",
+    "company": "Volvo Cars",
+    "role": "Senior Software Engineer",
+    "startDate": "2023-07",
+    "endDate": null,
+    "cluster": "Car Service",
+    "tech_stack": [
+      "Node.js",
+      "Fastify",
+      "Kafka",
+      "Kubernetes",
+      "Jest",
+      "Grafana",
+      "Prometheus",
+      "Kibana",
+      "GitHub Actions"
+    ],
+    "content": "Built and maintained several microservices using Node.js (Fastify). The codebase combines class-based and functional patterns. Followed testing best practices using Jest. Used Kafka and Confluent Schema Registry. Deployed via Kubernetes and managed with ArgoCD. CI/CD with GitHub Actions. Monitoring with Grafana, Prometheus, and Kibana."
+  },
+  {
+    "category": "experience",
+    "company": "Volvo Cars",
+    "role": "Senior Software Engineer",
+    "startDate": "2023-07",
+    "endDate": null,
+    "cluster": "Car Service",
+    "tech_stack": ["Kafka", "SendGrid", "Iterable", "CMS", "Figma"],
+    "content": "Led the development of a Communication Microservice that consumes Kafka events and selects delivery channels (email, push, in-app). Built a rules-based delivery system. Integrated SendGrid, Iterable, and CMS platforms for localized templates. Worked with designers via Figma."
+  },
+  {
+    "category": "experience",
+    "company": "Volvo Cars",
+    "role": "Senior Software Engineer",
+    "startDate": "2023-07",
+    "endDate": null,
+    "cluster": "Car Service",
+    "tech_stack": ["Slack", "Microsoft Teams"],
+    "content": "Collaborated via Slack and Microsoft Teams. Worked with Product, Design, DevEx, and other cluster teams. Actively participated in requirement gathering, task scoping, prioritization, and cross-team coordination."
+  },
+
+  {
+    "category": "experience",
+    "company": "Airmee",
+    "role": "Senior Backend Developer",
+    "startDate": "2022-02",
+    "endDate": "2023-07",
+    "team": "Integration",
+    "tech_stack": ["Node.js", "PostgreSQL", "AWS", "Lambda", "SQS"],
+    "content": "I was part of the Integration Team (2–3 developers) at Airmee, focused on building and maintaining the systems that allowed external businesses to use our delivery services. We handled integrations for companies of all sizes, managing the ingestion and processing of new delivery orders."
+  },
+  {
+    "category": "experience",
+    "company": "Airmee",
+    "role": "Senior Backend Developer",
+    "startDate": "2022-02",
+    "endDate": "2023-07",
+    "team": "Integration",
+    "tech_stack": [
+      "Node.js",
+      "AWS Lambda",
+      "SQS",
+      "PostgreSQL",
+      "Bitbucket Pipelines",
+      "Mocha"
+    ],
+    "content": "Led the development of a new integration for Amazon: Built a microservice in Node.js deployed via AWS Lambda. Used AWS SQS for event-driven ingestion of high-volume order data. Stored data in PostgreSQL. Set up CI/CD pipelines using Bitbucket Pipelines. Wrote unit tests using Mocha and assertion libraries. Performed end-to-end testing in a QA environment before production deployments. Monitored and maintained the service using AWS CloudWatch (alerts, alarms, dashboards)."
+  },
+  {
+    "category": "experience",
+    "company": "Airmee",
+    "role": "Senior Backend Developer",
+    "startDate": "2022-02",
+    "endDate": "2023-07",
+    "team": "Integration",
+    "tech_stack": ["Node.js", "AS2", "PostgreSQL"],
+    "content": "Rewritten H&M Group integration and contributed to Shein integration, adapting to each client's requirements. Supported integrations over various channels, including public APIs used by clients and AS2 server setup and management for secure order ingestion."
+  },
+  {
+    "category": "experience",
+    "company": "Airmee",
+    "role": "Senior Backend Developer",
+    "startDate": "2022-02",
+    "endDate": "2023-07",
+    "team": "Integration",
+    "tech_stack": ["Node.js"],
+    "content": "Promoted better backend practices by reducing reliance on database logic (stored procedures, DB functions), and refactoring business logic into microservices to improve testability and maintainability. Implemented functional programming patterns where suitable, and applied principles like separation of concerns and DRY to improve code structure and readability."
+  },
+  {
+    "category": "experience",
+    "company": "Airmee",
+    "role": "Senior Backend Developer",
+    "startDate": "2022-02",
+    "endDate": "2023-07",
+    "team": "Integration",
+    "tech_stack": ["Slack"],
+    "content": "Worked directly with the CTO, Integration Manager, and external partners, including Amazon developers. Coordinated with internal teams responsible for order processing systems. Daily communication and coordination done via Slack."
+  },
+  {
+    "category": "experience",
+    "company": "Freelance",
+    "role": "Backend Developer",
+    "startDate": "2021-03",
+    "endDate": "2022-01",
+    "employmentType": "Contractor",
+    "tech_stack": ["Node.js", "PostgreSQL", "AWS", "AWS Lambda"],
+    "content": "Worked as a contractor creating and maintaining Microservices hosted in AWS, using NodeJS, AWS Lambda and PostgreSQL. Built and maintained APIs and services focused on scalability and performance."
+  },
+  {
+    "category": "experience",
+    "company": "Freelance",
+    "role": "Backend Developer",
+    "startDate": "2021-03",
+    "endDate": "2022-01",
+    "employmentType": "Contractor",
+    "tech_stack": ["AWS", "Node.js", "Monitoring"],
+    "content": "Involved in system design decisions for new features and improvements. Took part in monitoring and optimizing API performance, including building monitoring dashboards and setting up alarms to ensure system health."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Engineer",
+    "startDate": "2018-05",
+    "endDate": "2021-02",
+    "tech_stack": ["Node.js", "PostgreSQL", "ElasticSearch", "AWS"],
+    "content": "Vivial was my first role focused on Node.js development and the first time I worked in a team that consistently followed engineering best practices, design patterns, and modern architecture principles. I was part of a team of 6–8 developers, along with QAs, a tech lead, and an architect who also acted as a mentor."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Engineer",
+    "startDate": "2018-05",
+    "endDate": "2021-02",
+    "tech_stack": [
+      "Node.js",
+      "PostgreSQL",
+      "ElasticSearch",
+      "AWS",
+      "Microservices"
+    ],
+    "content": "Contributed to a large-scale migration project, transitioning a legacy PHP monolith to a Node.js microservices architecture with zero downtime. Developed and maintained REST APIs for multiple services, and worked on a Backend-for-Frontend (BFF) layer used by various internal applications."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Engineer",
+    "startDate": "2018-05",
+    "endDate": "2021-02",
+    "tech_stack": ["Node.js", "PostgreSQL", "ElasticSearch", "Microservices"],
+    "content": "Helped implement microservices for Authentication and Authorization, treated as independent services. Built features to support a content marketing platform that improved local businesses' online presence through SEO-optimized content and indexing. Used ElasticSearch to index and serve content for internal search functionality."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Engineer",
+    "startDate": "2018-05",
+    "endDate": "2021-02",
+    "tech_stack": [
+      "Node.js",
+      "PostgreSQL",
+      "Functional Programming",
+      "Microservices"
+    ],
+    "content": "The team applied a functional programming approach throughout the codebase. Microservice communication and orchestration were based on clean separation of responsibilities, improving modularity and testability."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Engineer",
+    "startDate": "2018-05",
+    "endDate": "2021-02",
+    "tech_stack": ["Node.js", "PostgreSQL", "APIs"],
+    "content": "Led a solo project to build a data migration tool: Created a Node.js script that pulled data from the old database, transformed it based on new business rules, and inserted it into the new system via efficient API calls. This helped enforce consistent business logic during the transition."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Engineer",
+    "startDate": "2018-05",
+    "endDate": "2021-02",
+    "tech_stack": [
+      "Node.js",
+      "PostgreSQL",
+      "ElasticSearch",
+      "SQS",
+      "Docker",
+      "CircleCI",
+      "Jest",
+      "JWT"
+    ],
+    "content": "Technical stack included Node.js, PostgreSQL, ElasticSearch, AWS SQS, Docker, CircleCI, Jest, and JWT. We used SQS for message queueing (e.g., high-priority vs. low-priority processing) and followed CI/CD practices with CircleCI."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Engineer",
+    "startDate": "2018-05",
+    "endDate": "2021-02",
+    "tech_stack": ["Node.js", "Functional Programming", "Mentorship"],
+    "content": "Coming from a C#/.NET background, this role marked a transition to functional programming, which I came to appreciate and prefer. The team culture emphasized mentoring, code quality, and continuous learning, helping me grow rapidly as a developer."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Developer Jr",
+    "startDate": "2015-09",
+    "endDate": "2018-05",
+    "tech_stack": ["C#", ".NET", "SQL Server", "Oracle", "Entity Framework"],
+    "content": "My first role as a software developer focused on maintaining and supporting internal tools for Operations and HR departments. Worked on bug fixes, user-reported issues, and small improvements across several business-critical applications."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Developer Jr",
+    "startDate": "2015-09",
+    "endDate": "2018-05",
+    "tech_stack": ["C#", ".NET MVC", "SQL Server", "Oracle"],
+    "content": "Maintained legacy applications written in C# and .NET using object-oriented programming principles. Worked with Microsoft SQL Server and Oracle databases, using Entity Framework as the ORM."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Developer Jr",
+    "startDate": "2015-09",
+    "endDate": "2018-05",
+    "tech_stack": ["C#", ".NET MVC", "Windows Desktop Apps"],
+    "content": "Supported and improved various internal tools, including HR web applications like vendor payment systems built with .NET MVC, and Windows desktop applications used for parsing and processing thousands of directory records such as Yellow & White Pages."
+  },
+  {
+    "category": "experience",
+    "company": "Vivial",
+    "role": "Software Developer Jr",
+    "startDate": "2015-09",
+    "endDate": "2018-05",
+    "tech_stack": ["C#", ".NET", "UI Improvements"],
+    "content": "Worked on the rewrite of a legacy Windows application used for large file parsing: rebuilt the UI to improve responsiveness and usability, and eliminated blocking behavior during record processing, significantly improving user experience and workflow efficiency."
+  },
+  {
+    "category": "professional_summary",
+    "content": "With 9+ years of experience specializing in building scalable and resilient backend systems. I contribute to team culture and growth through clear communication and goal-setting. Experienced in Node.js, TypeScript, C#, .NET, Postgres, MongoDB, Kafka, Docker, AWS, and more."
+  },
+  {
+    "category": "contact",
+    "content": "Contact me at heyluis@duck.com. LinkedIn: https://www.linkedin.com/in/luisanz/. GitHub: https://github.com/lsanchezvv. Reach out for software development collaborations or networking."
+  },
+  {
+    "category": "side_project",
+    "content": "Residently Admin is a web-based application to simplify condominium administration, using TypeScript, Node.js, PostgreSQL, Drizzle ORM, React, and TailwindCSS. Visit https://www.residently.app/"
+  },
+  {
+    "category": "side_project",
+    "content": "Personal Website Chatbot is an AI-powered chatbot integrated into my personal website to answer questions about my professional experience as a software developer. It uses Next.js, OpenAI, Vercel, Vercel AI SDK, and Pinecone Embedding to provide visitors with instant, contextual answers about my software development background."
+  }
+]

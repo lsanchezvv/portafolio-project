@@ -2,18 +2,11 @@ import namespaceIndex from "@/lib/db/pinecone";
 import { openai } from "@ai-sdk/openai";
 import { getEmbedding } from "@/lib/openai";
 import { streamText } from "ai";
-import { checkBotId } from 'botid/server';
-import { NextResponse } from 'next/server';
 
 export const maxDuration = 30;
 
 export async function POST(req: Request) {
   try {
-    const verification = await checkBotId();
- 
-    if (verification.isBot) {
-      return NextResponse.json({ error: 'Access denied' }, { status: 403 });
-    }
     const { messages } = await req.json();
     const messagesTruncated = messages.slice(-6);
 

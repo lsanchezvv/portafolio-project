@@ -3,18 +3,6 @@ import { Geist } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { BotIdClient } from "botid/client";
-
-const protectedRoutes = [
-  {
-    path: "/api/chat",
-    method: "POST",
-  },
-  {
-    path: "/api/getEmbeddingForPortfolio",
-    method: "POST",
-  },
-];
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -53,9 +41,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <BotIdClient protect={protectedRoutes} />
-      </head>
       <body className={`${geistSans.className} antialiased`}>
         <Navbar />
         <main>{children}</main>
