@@ -4,11 +4,7 @@ import "../globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { BotIdClient } from "botid/client";
-import { ReactNode } from 'react';
 
-type RootLayoutProps = {
-  children: ReactNode;
-};
 const protectedRoutes = [
   {
     path: "/api/chat",
