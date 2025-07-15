@@ -1,12 +1,42 @@
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 import namespaceIndex from "@/lib/db/pinecone";
 import { openai } from "@ai-sdk/openai";
 import { getEmbedding } from "@/lib/openai";
 import { streamText } from "ai";
 
+
+import { waitUntil } from '@vercel/functions';
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
+
+// Create a new ratelimiter
+const ratelimit = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.slidingWindow(10, "10 s"),
+  prefix: "@upstash/ratelimit",
+  analytics: true
+});
 export const maxDuration = 30;
+
+
+
 
 export async function POST(req: Request) {
   try {
+    const identifier = "api";
+    const { success, limit, remaining, pending } = await ratelimit.limit(identifier);
+    const response = {
+      success: success,
+      limit: limit, 
+      remaining: remaining
+    }
+    waitUntil(pending)
+    
+    if (!success) {
+      return new Response(JSON.stringify(response), { status: 429 });
+    }
     const { messages } = await req.json();
     const messagesTruncated = messages.slice(-6);
 

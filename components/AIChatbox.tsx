@@ -53,6 +53,10 @@ export default function AIChatBox({ open, onClose }: AIChatBoxProps) {
     }, 0);
   };
 
+
+  if (error && error.message.includes("429")) {
+    console.log("Rate limit exceeded", error);
+  }
   return (
     <div
       className={cn(
