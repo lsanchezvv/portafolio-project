@@ -53,7 +53,6 @@ export default function AIChatBox({ open, onClose }: AIChatBoxProps) {
     }, 0);
   };
 
-  console.log('messages', messages)
   return (
     <div
       className={cn(
