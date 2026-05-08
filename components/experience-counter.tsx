@@ -14,58 +14,57 @@ function getExperienceDuration() {
   let minutes = now.getUTCMinutes() - EXPERIENCE_START.getUTCMinutes();
   let seconds = now.getUTCSeconds() - EXPERIENCE_START.getUTCSeconds();
 
-  if (seconds < 0) {
-    seconds += 60;
-    minutes--;
-  }
-  if (minutes < 0) {
-    minutes += 60;
-    hours--;
-  }
-  if (hours < 0) {
-    hours += 24;
-    days--;
-  }
+  if (seconds < 0) { seconds += 60; minutes--; }
+  if (minutes < 0) { minutes += 60; hours--; }
+  if (hours < 0) { hours += 24; days--; }
   if (days < 0) {
     const prevMonth = new Date(now.getUTCFullYear(), now.getUTCMonth(), 0);
     days += prevMonth.getUTCDate();
     months--;
   }
-  if (months < 0) {
-    months += 12;
-    years--;
-  }
+  if (months < 0) { months += 12; years--; }
+
   return { years, months, days, hours, minutes, seconds };
 }
 
-const ExperienceCounter = () => {
+interface ExperienceCounterProps {
+  variant?: "full" | "years";
+}
+
+const ExperienceCounter = ({ variant = "full" }: ExperienceCounterProps) => {
   const [duration, setDuration] = useState<ReturnType<typeof getExperienceDuration> | null>(null);
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
     setHasMounted(true);
     setDuration(getExperienceDuration());
-    const interval = setInterval(() => {
-      setDuration(getExperienceDuration());
-    }, 1000); // update every second
+    const interval = setInterval(() => setDuration(getExperienceDuration()), 1000);
     return () => clearInterval(interval);
   }, []);
 
-  // Helper to pad numbers to two digits
   const pad = (n: number) => n.toString().padStart(2, "0");
 
   if (!hasMounted || !duration) return null;
 
+  if (variant === "years") {
+    return (
+      <div className="flex items-baseline gap-2">
+        <span className="text-5xl font-extrabold tracking-tight">{duration.years}+</span>
+        <span className="text-sm text-muted-foreground">years of experience</span>
+      </div>
+    );
+  }
+
   return (
     <span>
-      With {" "}
+      With{" "}
       <Badge className="rounded-full border-none">
         <LucideClock />
-        {duration.years} years, {duration.months} months, {duration.days} days and {" "}
+        {duration.years} years, {duration.months} months, {duration.days} days and{" "}
         {pad(duration.hours)}:{pad(duration.minutes)}:{pad(duration.seconds)}
       </Badge>{" "}
     </span>
   );
 };
 
-export default ExperienceCounter; 
+export default ExperienceCounter;
