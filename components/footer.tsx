@@ -1,7 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { GithubLogo } from "./icons";
-import { Logo } from "./navbar/logo";
 import { Button } from "@/components/ui/button";
 const footerLinks = [
   {
