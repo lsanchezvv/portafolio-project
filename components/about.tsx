@@ -23,15 +23,14 @@ const About = () => {
           <div className="flex-[1.2] flex flex-col gap-5">
             <Badge variant="secondary" className="w-fit">About Me</Badge>
             <h2 className="text-4xl font-bold tracking-tight">
-              Backend System Connoisseur
+              Software Engineer
             </h2>
             <p className="text-muted-foreground leading-relaxed text-[15px]">
               With over a decade of experience in software development, I specialize
-              in building scalable and resilient backend systems using modern and
+              in building scalable and resilient systems using modern and
               proven technologies. I value clear communication, well-defined goals,
               and strong team culture. While my roots are in the backend, I&apos;m no
-              stranger to frontend work — even if centering a div still takes me a
-              moment.
+              stranger to frontend work.
             </p>
             <div className="flex flex-wrap gap-3 mt-1">
               <a href="https://github.com/lsanchezvv" target="_blank" rel="noopener noreferrer">
@@ -40,7 +39,7 @@ const About = () => {
                   View Github
                 </Button>
               </a>
-              <a href="/luis_sanchez_sr_backend.pdf" download>
+              <a href="/luis_sanchez_software_engineer.pdf" download>
                 <Button variant="outline" className="rounded-full">
                   <Download />
                   Download CV

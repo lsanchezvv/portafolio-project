@@ -23,9 +23,6 @@ const Footer = () => {
     <footer className="mt-20">
       <div className="max-w-screen-md mx-auto">
         <div className="py-12 flex flex-col justify-start items-center">
-          {/* Logo */}
-          <Logo />
-
           <ul className="mt-6 flex items-center gap-4 flex-wrap">
             {footerLinks.map(({ title, href }) => (
               <li key={title}>
